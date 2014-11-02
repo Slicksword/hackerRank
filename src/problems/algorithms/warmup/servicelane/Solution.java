@@ -3,7 +3,6 @@ package problems.algorithms.warmup.servicelane;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Map;
 
 public final class Solution {
 	public static void main(String[] args) {
@@ -13,9 +12,6 @@ public final class Solution {
 		int numTestCases = firstLine[1];
 
 		int[] widths = parseIntsFromString(readLineQuietly(br));
-		
-		// Map<End Index, Map<Start Index, WidestPath>>
-		Map<Integer, Map<Integer, Integer>> storedPossibleVehicles;
 		
 		for(int testCase =0; testCase < numTestCases; ++testCase) {
 			int[] startAndEnd = parseIntsFromString(readLineQuietly(br));
